@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46DBACAE7501BEDC95598573 /* Pods_cellcom_rf_exam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB9D12BA0E6DA295612202A /* Pods_cellcom_rf_exam.framework */; };
+		8A00D4BE26D2803B001119CF /* cellcom_rf_examApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4BD26D2803B001119CF /* cellcom_rf_examApp.swift */; };
+		8A00D4C226D2803E001119CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A00D4C126D2803E001119CF /* Assets.xcassets */; };
+		8A00D4C526D2803E001119CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A00D4C426D2803E001119CF /* Preview Assets.xcassets */; };
+		8A00D4CE26D50274001119CF /* ResponsePopular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4CD26D50274001119CF /* ResponsePopular.swift */; };
+		8A00D4D026D50C35001119CF /* MovieFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4CF26D50C35001119CF /* MovieFetcher.swift */; };
+		8A00D4D226D50D79001119CF /* MovieError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4D126D50D79001119CF /* MovieError.swift */; };
+		8A00D4D526D511B4001119CF /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4D426D511B4001119CF /* Parsing.swift */; };
+		8A00D4D926D511F1001119CF /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4D826D511F1001119CF /* Formatters.swift */; };
+		8A00D4DC26D5122D001119CF /* Array+Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4DB26D5122D001119CF /* Array+Filtering.swift */; };
+		8A00D4DF26D51C12001119CF /* PopularMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4DE26D51C12001119CF /* PopularMoviesView.swift */; };
+		8A00D4E126D51D89001119CF /* PopularMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4E026D51D89001119CF /* PopularMoviesViewModel.swift */; };
+		8A00D4E326D51DBF001119CF /* PopularMoviesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4E226D51DBF001119CF /* PopularMoviesBuilder.swift */; };
+		8A00D4E526D51DE0001119CF /* PopularMovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4E426D51DE0001119CF /* PopularMovieRow.swift */; };
+		8A00D4E726D51DF4001119CF /* PopularMovieRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4E626D51DF4001119CF /* PopularMovieRowViewModel.swift */; };
+		8A00D4EA26D55B97001119CF /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4E926D55B97001119CF /* NetworkImage.swift */; };
+		8A00D4EE26D63CA2001119CF /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4ED26D63CA2001119CF /* MovieDetailsView.swift */; };
+		8A00D4F026D63CB3001119CF /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A00D4EF26D63CB3001119CF /* MovieDetailsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47F9728D643C3121BEE0AEF2 /* Pods-cellcom-rf-exam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellcom-rf-exam.release.xcconfig"; path = "Target Support Files/Pods-cellcom-rf-exam/Pods-cellcom-rf-exam.release.xcconfig"; sourceTree = "<group>"; };
+		8A00D4BA26D2803B001119CF /* cellcom-rf-exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cellcom-rf-exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A00D4BD26D2803B001119CF /* cellcom_rf_examApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellcom_rf_examApp.swift; sourceTree = "<group>"; };
+		8A00D4C126D2803E001119CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A00D4C426D2803E001119CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A00D4C626D2803E001119CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A00D4CD26D50274001119CF /* ResponsePopular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePopular.swift; sourceTree = "<group>"; };
+		8A00D4CF26D50C35001119CF /* MovieFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFetcher.swift; sourceTree = "<group>"; };
+		8A00D4D126D50D79001119CF /* MovieError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieError.swift; sourceTree = "<group>"; };
+		8A00D4D426D511B4001119CF /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		8A00D4D826D511F1001119CF /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		8A00D4DB26D5122D001119CF /* Array+Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Filtering.swift"; sourceTree = "<group>"; };
+		8A00D4DE26D51C12001119CF /* PopularMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesView.swift; sourceTree = "<group>"; };
+		8A00D4E026D51D89001119CF /* PopularMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesViewModel.swift; sourceTree = "<group>"; };
+		8A00D4E226D51DBF001119CF /* PopularMoviesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesBuilder.swift; sourceTree = "<group>"; };
+		8A00D4E426D51DE0001119CF /* PopularMovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieRow.swift; sourceTree = "<group>"; };
+		8A00D4E626D51DF4001119CF /* PopularMovieRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovieRowViewModel.swift; sourceTree = "<group>"; };
+		8A00D4E926D55B97001119CF /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		8A00D4ED26D63CA2001119CF /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		8A00D4EF26D63CB3001119CF /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		A125BF40C15646E5C56121CC /* Pods-cellcom-rf-exam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cellcom-rf-exam.debug.xcconfig"; path = "Target Support Files/Pods-cellcom-rf-exam/Pods-cellcom-rf-exam.debug.xcconfig"; sourceTree = "<group>"; };
+		ACB9D12BA0E6DA295612202A /* Pods_cellcom_rf_exam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cellcom_rf_exam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A00D4B726D2803B001119CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DBACAE7501BEDC95598573 /* Pods_cellcom_rf_exam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		055CB57EF06047668FB4AB34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A125BF40C15646E5C56121CC /* Pods-cellcom-rf-exam.debug.xcconfig */,
+				47F9728D643C3121BEE0AEF2 /* Pods-cellcom-rf-exam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A00D4B126D2803B001119CF = {
+			isa = PBXGroup;
+			children = (
+				8A00D4BC26D2803B001119CF /* cellcom-rf-exam */,
+				8A00D4BB26D2803B001119CF /* Products */,
+				055CB57EF06047668FB4AB34 /* Pods */,
+				A95E59E3568863E5D657AA21 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A00D4BB26D2803B001119CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4BA26D2803B001119CF /* cellcom-rf-exam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A00D4BC26D2803B001119CF /* cellcom-rf-exam */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4EB26D63C60001119CF /* Ui */,
+				8A00D4D326D511A3001119CF /* Utilities */,
+				8A00D4CC26D501E4001119CF /* TMDBApi */,
+				8A00D4BD26D2803B001119CF /* cellcom_rf_examApp.swift */,
+				8A00D4C126D2803E001119CF /* Assets.xcassets */,
+				8A00D4C626D2803E001119CF /* Info.plist */,
+				8A00D4C326D2803E001119CF /* Preview Content */,
+			);
+			path = "cellcom-rf-exam";
+			sourceTree = "<group>";
+		};
+		8A00D4C326D2803E001119CF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4C426D2803E001119CF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A00D4CC26D501E4001119CF /* TMDBApi */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4CD26D50274001119CF /* ResponsePopular.swift */,
+				8A00D4CF26D50C35001119CF /* MovieFetcher.swift */,
+				8A00D4D126D50D79001119CF /* MovieError.swift */,
+			);
+			path = TMDBApi;
+			sourceTree = "<group>";
+		};
+		8A00D4D326D511A3001119CF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4E826D55B85001119CF /* Network Image */,
+				8A00D4DA26D5120C001119CF /* Array Extensions */,
+				8A00D4D726D511E0001119CF /* Formatters */,
+				8A00D4D626D511D6001119CF /* Parsing */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8A00D4D626D511D6001119CF /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4D426D511B4001119CF /* Parsing.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		8A00D4D726D511E0001119CF /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4D826D511F1001119CF /* Formatters.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		8A00D4DA26D5120C001119CF /* Array Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4DB26D5122D001119CF /* Array+Filtering.swift */,
+			);
+			path = "Array Extensions";
+			sourceTree = "<group>";
+		};
+		8A00D4DD26D51BE6001119CF /* movies */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4DE26D51C12001119CF /* PopularMoviesView.swift */,
+				8A00D4E026D51D89001119CF /* PopularMoviesViewModel.swift */,
+				8A00D4E226D51DBF001119CF /* PopularMoviesBuilder.swift */,
+				8A00D4E426D51DE0001119CF /* PopularMovieRow.swift */,
+				8A00D4E626D51DF4001119CF /* PopularMovieRowViewModel.swift */,
+			);
+			path = movies;
+			sourceTree = "<group>";
+		};
+		8A00D4E826D55B85001119CF /* Network Image */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4E926D55B97001119CF /* NetworkImage.swift */,
+			);
+			path = "Network Image";
+			sourceTree = "<group>";
+		};
+		8A00D4EB26D63C60001119CF /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4EC26D63C8C001119CF /* moviedetails */,
+				8A00D4DD26D51BE6001119CF /* movies */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		8A00D4EC26D63C8C001119CF /* moviedetails */ = {
+			isa = PBXGroup;
+			children = (
+				8A00D4ED26D63CA2001119CF /* MovieDetailsView.swift */,
+				8A00D4EF26D63CB3001119CF /* MovieDetailsViewModel.swift */,
+			);
+			path = moviedetails;
+			sourceTree = "<group>";
+		};
+		A95E59E3568863E5D657AA21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9D12BA0E6DA295612202A /* Pods_cellcom_rf_exam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A00D4B926D2803B001119CF /* cellcom-rf-exam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A00D4C926D2803E001119CF /* Build configuration list for PBXNativeTarget "cellcom-rf-exam" */;
+			buildPhases = (
+				A8011D0027742F8F4B04F0D2 /* [CP] Check Pods Manifest.lock */,
+				8A00D4B626D2803B001119CF /* Sources */,
+				8A00D4B726D2803B001119CF /* Frameworks */,
+				8A00D4B826D2803B001119CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cellcom-rf-exam";
+			productName = "cellcom-rf-exam";
+			productReference = 8A00D4BA26D2803B001119CF /* cellcom-rf-exam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A00D4B226D2803B001119CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8A00D4B926D2803B001119CF = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A00D4B526D2803B001119CF /* Build configuration list for PBXProject "cellcom-rf-exam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A00D4B126D2803B001119CF;
+			productRefGroup = 8A00D4BB26D2803B001119CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A00D4B926D2803B001119CF /* cellcom-rf-exam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A00D4B826D2803B001119CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A00D4C526D2803E001119CF /* Preview Assets.xcassets in Resources */,
+				8A00D4C226D2803E001119CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8011D0027742F8F4B04F0D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cellcom-rf-exam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A00D4B626D2803B001119CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A00D4E726D51DF4001119CF /* PopularMovieRowViewModel.swift in Sources */,
+				8A00D4CE26D50274001119CF /* ResponsePopular.swift in Sources */,
+				8A00D4D026D50C35001119CF /* MovieFetcher.swift in Sources */,
+				8A00D4E526D51DE0001119CF /* PopularMovieRow.swift in Sources */,
+				8A00D4BE26D2803B001119CF /* cellcom_rf_examApp.swift in Sources */,
+				8A00D4EA26D55B97001119CF /* NetworkImage.swift in Sources */,
+				8A00D4D526D511B4001119CF /* Parsing.swift in Sources */,
+				8A00D4F026D63CB3001119CF /* MovieDetailsViewModel.swift in Sources */,
+				8A00D4EE26D63CA2001119CF /* MovieDetailsView.swift in Sources */,
+				8A00D4DF26D51C12001119CF /* PopularMoviesView.swift in Sources */,
+				8A00D4E326D51DBF001119CF /* PopularMoviesBuilder.swift in Sources */,
+				8A00D4D226D50D79001119CF /* MovieError.swift in Sources */,
+				8A00D4E126D51D89001119CF /* PopularMoviesViewModel.swift in Sources */,
+				8A00D4DC26D5122D001119CF /* Array+Filtering.swift in Sources */,
+				8A00D4D926D511F1001119CF /* Formatters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A00D4C726D2803E001119CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A00D4C826D2803E001119CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A00D4CA26D2803E001119CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A125BF40C15646E5C56121CC /* Pods-cellcom-rf-exam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"cellcom-rf-exam/Preview Content\"";
+				DEVELOPMENT_TEAM = H272B69AS7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "cellcom-rf-exam/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "il.gov.tel-aviv.cellcom-rf-exam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A00D4CB26D2803E001119CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F9728D643C3121BEE0AEF2 /* Pods-cellcom-rf-exam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"cellcom-rf-exam/Preview Content\"";
+				DEVELOPMENT_TEAM = H272B69AS7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "cellcom-rf-exam/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "il.gov.tel-aviv.cellcom-rf-exam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A00D4B526D2803B001119CF /* Build configuration list for PBXProject "cellcom-rf-exam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A00D4C726D2803E001119CF /* Debug */,
+				8A00D4C826D2803E001119CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A00D4C926D2803E001119CF /* Build configuration list for PBXNativeTarget "cellcom-rf-exam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A00D4CA26D2803E001119CF /* Debug */,
+				8A00D4CB26D2803E001119CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A00D4B226D2803B001119CF /* Project object */;
+}
